@@ -3,8 +3,69 @@ body{
    margin: 0;
    box-sizing: border-box;
 }
-.navBar{
-    background: black;
-    color: #fff;
-    padding: 20px 5px;
+.navbar{
+    background: #fff !important ;
+    color: #000;
+}
+.navbar-brand{
+    color: red ;
+}
+.nav-link{
+    color: red;
+    text-transform: uppercase;
+}
+.card{
+    width: 100%;
+    border: 1px solid #000;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.cardTitleContainer{
+    position: absolute;
+    top: 41%;
+    left: 32%;
+    background-color: rgba(204, 194, 194, 0.856);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 4px;
+    border-radius: 5px;
+}
+/* shop section */
+.shopCard{
+    width: 100%;
+    border: 1px solid #000;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-color: gray !important;
+}
+.addTOCard{
+    position: absolute;
+    bottom: 7%;
+    left: 28%;
+    background: #ddd;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: translate 0.3s ease-in-out;
+    z-index: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.shopCard:hover .addTOCard{
+    opacity: 1;
+}
+.shopCard:hover .dark_overlay{
+    opacity: 1;
+}
+.signOut{
+    cursor: pointer;
+}
+.signOut:hover{
+    color: blue;
 }
